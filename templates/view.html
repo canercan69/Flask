@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Kullanıcıları Görüntüle{% endblock %}
+{% block body %}
+   {% for item in values %}
+      <p> Kullanıcı: {{item.name}}, Mail: {{item.email}}</p>
+   {% endfor %}
+{% endblock %}

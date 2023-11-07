@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Başlangıç</title>
+    </head>
+    <body>
+        <h1>Başladık!</h1>
+        {% for isim in content %}
+            <p>{{isim}}</p>
+            {% if isim == "can" %}
+            <p>can bulundu</p>
+            {% elif isim == "er" %}
+            <p>er bulundu</p>
+            {% elif isim == "can2" %}
+            <p>can2 bulundu</p>            
+            {% else %}
+            <p>er2 bulundu</p>
+            {% endif %}   
+        {% endfor %}
+        
+
+        <!--{% for x in range(10) %}
+            {% if x % 2 == 1 %}
+                <p>{{x}}</p>
+            {% endif %}
+        {% endfor %}-->
+
+        <!--  <p>{{content}}{{r}}</p>  -->
+        <!--         -->   
+        
+    </body>
+</html>
+
+
+

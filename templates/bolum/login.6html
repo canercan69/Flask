@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Giriş Sayfası{% endblock %}
+{% block body %}
+    {% with messages=get_flashed_messages( )%}
+        {% if messages %}
+            {% for msg in messages %}
+                <p>{{msg}}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+
+<form action="#" method="post">
+    <p>Kullanıcı:</p>
+    <p><input type="text" name="nm" /></p>
+    <p><input type="submit" value="Giriş" /></p>
+</form>
+{%endblock%}

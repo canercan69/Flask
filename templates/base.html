@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+<title>{%block title%}{%endblock%}</title>
+
+</head>
+
+<body>
+	<div id="main">	
+		<div id="top-nav"><h1></h1></div>
+		
+		<div id="navigation" style="text-align: left; width: 152px; height: 200px;">
+            &nbsp;&nbsp; Ana Menü&nbsp;<br />
+			<hr />
+
+		    <a href="/" class="navigation">Başlangıç</a>
+			<a href="/user" class="navigation">Kullanıcı</a>
+			<a href="/login" class="navigation">Giriş</a>
+			<a href="/view" class="navigation">Listele</a>
+			<a href="/logout" class="navigation">Çıkış</a>
+            <a href="/" class="navigation">1</a>
+            <a href="/" class="navigation">2</a>
+            <a href="/" class="navigation">3</a>
+
+			
+		</div>
+
+		<div id="content" style="width: 528px">
+		
+            
+            {%block body%}{%endblock%}
+
+        </div>
+
+	</div>
+</body>
+
+</html>
